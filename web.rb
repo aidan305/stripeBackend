@@ -69,7 +69,7 @@ def authenticate!
   @customer
 end
 
-def create_customer
+def create_customer(name)
   Stripe::Customer.create(
     :description => 'mobile SDK example customer',
     :name => name, 
